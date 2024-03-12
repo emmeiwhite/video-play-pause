@@ -221,8 +221,8 @@ h1 {
 
 .switch-btn {
   position: absolute;
-  bottom: 7%;
   left: 7%;
+  bottom: 7%;
   width: 7rem;
   height: 2rem;
   display: flex;
@@ -232,6 +232,7 @@ h1 {
   border: none;
   transition: var(--transition);
 }
+
 .switch-btn span {
   display: inline-block;
   font-size: 0.85rem;
@@ -239,17 +240,18 @@ h1 {
   text-transform: capitalize;
   color: var(--clr-primary-5);
 }
+
 .switch {
   position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: var(--radius);
   width: 50%;
   height: 100%;
-  top: 0;
-  left: 0;
-  background: var(--clr-primary-5);
-  border-radius: var(--radius);
+  background-color: var(--clr-primary-5);
   margin: 0;
   display: block;
-  transition: var(--transition);
+  transform: var(--transition);
 }
 .slide .switch {
   left: 50%;
